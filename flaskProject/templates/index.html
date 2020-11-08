@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block head %}
+
+<title>HomePage</title>
+
+{% endblock %}
+
+        {% block body %}
+
+        <section class = "banner">
+            <div class = "banner-main-content">
+                <h2>GET INDIA'S LATEST NEWS</h2>
+                <h3>India's Leading News Portal</h3>
+                <button>
+                    <a href = "/aboutus">Know More</a>
+                </button>
+                <div class = "current-news-head">
+                    <h3>Amazon to invest Rs 20,761 crore to build AWS Cloud centre in Telangana
+                        <span>by arun chakravarty</span></h3>
+                    <h3>Another Round Of India-China Talks Soon, Latest Discussions Inconclusive
+                        <span>by irfan khan</span></h3>
+                    <h3>Earth Observation Satellite Is ISRO's First Launch Since Covid Lockdown
+                        <span>by shweta patel</span></h3>
+                    <h3>As WhatsApp Pay goes live, India brings new rule to limit use of Google Pay, PhonePe and other UPI apps
+                        <span>by eddy coehlo</span></h3>
+                </div>
+            </div>
+            <div class = "banner-sub-content">
+                <div class = "hot-topic">
+                    <img src = "https://images.livemint.com/img/2020/11/08/600x338/joebiden1rtr_1604818019811_1604818028157.jpg"alt = "">
+                    <div class = "hot-topic-content">
+                        <h2>How Joe Biden could turn a fractured picture to his advantage - Mint</h2>
+                        <h3>WSJ</h3>
+                        <p>An almost evenly divided Senate and a more closely divided House could be a combination that empowers moderates in both parties</p>
+                        <a href = "https://www.livemint.com/news/world/how-joe-biden-could-turn-a-fractured-picture-to-his-advantage-11604817661474.html">Read More</a>
+                    </div>
+                </div>
+                <div class = "hot-topic">
+                    <img src = "https://www.thenewsminute.com/sites/default/files/ArnabGoswami_Arrested_PoliceVan_051120_1200x800_PTI.jpg" alt = "">
+                    <div class = "hot-topic-content">
+                        <h2>Arnab Goswami shifted to Taloja Central Jail</h2>
+                        <h3>The News Minute</h3>
+                        <p>Arnab Goswami, was shifted to Taloja Central Jail in Navi Mumbai by officials citing security reasons. Arnab had been lodged at the Alibaug Government School which has been turned into a quarantine centre.</p>
+                        <a href = "https://www.thenewsminute.com/article/arnab-goswami-shifted-taloja-central-jail-he-alleges-threat-his-life-137158.html">Read More</a>
+                    </div>
+                </div>
+                <div class = "hot-topic">
+                    <img src = "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/11/08/Pictures/_20d3ea7e-217b-11eb-8d0b-9e4c602505c8.jpg" alt = "">
+                    <div class = "hot-topic-content">
+                        <h2>Shahid Kapoor goes 2018 de dana dhan 2019 as he preps for Jersey, see his latest look</h2>
+                        <h3>HT Entertainment Desk</h3>
+                        <p>": Shahid Kapoor has shared a new photo as he preps for his upcoming film Jersey. This will be his first release since the blockbuster Kabir Singh.</p>
+                        <a href = "https://www.hindustantimes.com/bollywood/shahid-kapoor-goes-de-dana-dhan-as-he-preps-for-jersey-see-his-latest-look/story-YmnulQkUXARfF1JDBdaKrO.html">Read More</a>
+                    </div>
+                </div>
+                <div class = "hot-topic">
+                    <img src = "https://www.androidpolice.com/wp-content/uploads/2018/08/DSC06980-668x445.jpg" alt = "">
+                    <div class = "hot-topic-content">
+                        <h2>Many websites will stop working on older Android versions in 2021 </h2>
+                        <h3>Android Police</h3>
+                        <p>It took a long time, but most of the web now uses HTTPS to securely transmit information, partially thanks to a push by Google. However, this does mean</p>
+                        <a href = "https://www.androidpolice.com/2020/11/07/many-websites-will-stop-working-on-older-android-versions-in-2021/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <main>
+            <section class = "main-container-left">
+                <h2>Top Stories</h2>
+                <div class = "container-top-left">
+                    <article>
+                        <img src = "{{url_for('static', filename='images/top-left.jpg')}}">
+                        <div>
+                            <h3>Best Used Cars Under $20, 000 for families</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea sint, nisi rem earum fugit? Facere veritatis sapiente eveniet quibusdam.</p>
+                            <a href = "#">Read More <span>>></span></a>
+                        </div>
+                    </article>
+                </div>
+                <div class = "container-bottom-left">
+                    <article>
+
+                        <img src = "{{url_for('static', filename='images/bottom-left-1.jpg')}}">
+                        <div>
+                            <h3>Best smart speakers for the year</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi iure modi animi cupiditate. Explicabo, nihil?</p>
+
+                            <a href = "#">Read More <span>>></span></a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src = "{{url_for('static', filename='images/bottom-left-2.jpg')}}">
+                        <div>
+                            <h3>iPad Pro, reviewed: Has the iPad become my main computer now?</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi iure modi animi cupiditate. Explicabo, nihil?</p>
+
+                            <a href = "#">Read More <span>>></span></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class = "main-container-right">
+                <h2>Latest Stories</h2>
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Here's how to track your stimulus check with the IRS Get My Payment Portal</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
+                        <a href = "#">Read More <span>>></span></a>
+                    </div>
+                    <img src = "{{url_for('static', filename='images/right-1.jpg')}}">
+                </article>
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>The best outdoor games to play with your family</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
+                        <a href = "#">Read More <span>>></span></a>
+                    </div>
+                    <img src = "{{url_for('static', filename='images/right-2.jpg')}}">
+                </article>
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Why walk? Check out the best electric scooters and e-bikes for 2020</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
+                        <a href = "#">Read More <span>>></span></a>
+                    </div>
+                    <img src = "{{url_for('static', filename='images/right-3.jpg')}}">
+                </article>
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Disneyland Paris will stream its Lion King stage show Friday night</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
+                        <a href = "#">Read More <span>>></span></a>
+                    </div>
+                    <img src = "{{url_for('static', filename='images/right-4.jpg')}}">
+                </article>
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Looking at a phone's lock screen also requries a warrant, judge rules</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus?</p>
+                        <a href = "#">Read More <span>>></span></a>
+                    </div>
+                    <img src = "{{url_for('static', filename='images/right-5.jpg')}}">
+                </article>
+            </section>
+        </main>
+
+    {% endblock %}
